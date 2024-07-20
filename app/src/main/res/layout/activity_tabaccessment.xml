@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabaccessment">
+
+    <ImageView
+        android:id="@+id/cjnlogo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+
+        app:srcCompat="@drawable/cjn_logo"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Trainingrm"
+        android:text="Training Room"
+        android:textSize="@dimen/_30sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/pinkbg"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="5dp"
+        android:background="#EBA6BE"
+        app:layout_constraintTop_toBottomOf="@id/Trainingrm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trainingfortv"
+        app:layout_constraintTop_toTopOf="@id/pinkbg"
+        android:text="Training For:"
+        android:textSize="70dp"
+        app:layout_constraintStart_toStartOf="@id/pinkbg"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Trainernametv"
+        app:layout_constraintTop_toBottomOf="@id/trainingfortv"
+        android:text="Trainer Name:"
+        android:textSize="70dp"
+        app:layout_constraintStart_toStartOf="@id/pinkbg"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentrequiredtv"
+        android:text="Payment Required:"
+        app:layout_constraintTop_toBottomOf="@id/pinkbg"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/pinkbg"
+        android:layout_marginLeft="300dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentlinktv"
+        android:text="Payment Link: www.link.com"
+        app:layout_constraintTop_toBottomOf="@id/paymentrequiredtv"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/pinkbg"
+        android:layout_marginLeft="300dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

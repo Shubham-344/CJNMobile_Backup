@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CJN Network</string>
+    <string name="training">Training</string>
+    <string name="assessment">Assessment</string>
+    <string name="interview">Interview</string>
+    <string name="job_offers">Job Descriptions</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">834650040038-bfi965kj80buprlb0dvfokcb8de90vs3.apps.googleusercontent.com</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="college_name">College Name</string>
+    <string name="Dashboard">Dashboard</string>
+</resources>

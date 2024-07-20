@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_dashboard"
+        android:icon="@drawable/iv_dash"
+        android:title="@string/Dashboard"/>
+    <item android:id="@+id/nav_training"
+        android:icon="@drawable/iv_training"
+        android:title="@string/training"/>
+    <item
+        android:id="@+id/nav_assessment"
+        android:icon="@drawable/iv_assesment"
+        android:title="@string/assessment" />
+    <item
+        android:id="@+id/nav_interview"
+        android:icon="@drawable/iv_interview"
+        android:title="@string/interview" />
+    <item
+        android:id="@+id/nav_job_offer"
+        android:icon="@drawable/iv_offer"
+        android:title="@string/job_offers" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/iv_profile"
+        android:title="@string/profile" />
+</menu>

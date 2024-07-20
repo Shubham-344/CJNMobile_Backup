@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CJNNetwork" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/color_main</item>
+
+    </style>
+
+    <style name="Theme.CJNNetwork" parent="Base.Theme.CJNNetwork" />
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/login_color</item>
+        <item name="colorControlActivated">@color/login_color</item>
+        <item name="colorAccent">@color/login_color</item>
+        <item name="android:textColorPrimary">@color/login_color</item>
+    </style>
+
+</resources>
