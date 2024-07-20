@@ -35,6 +35,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bpsi.cjnnetwork.TainingWebView;
+import com.bpsi.cjnnetwork.WebsiteOpeningActivity;
 import com.bpsi.cjnnetwork.databinding.FragmentTrainingNavigationBinding;
 import com.bpsi.cjnnetwork.model.Recyclerview_qr_code;
 import com.bpsi.cjnnetwork.network.WebserviceConstants;
@@ -314,9 +315,13 @@ public class TrainingNavigationFragment extends Fragment {
     public void onClick_dashboard_tapped(int position, int tapped_on) {
         if (tapped_on==1){
             try {
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(qr_codes_links.get(position).assessment_test_link));
-                startActivity(intent);
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(qr_codes_links.get(position).assessment_test_link));
+//                startActivity(intent);
+                    Intent intent = new Intent(getContext(), WebsiteOpeningActivity.class);
+                    intent.putExtra("UrlLink",qr_codes_links.get(position).assessment_test_link);
+                    Log.d( "webCheck11111",qr_codes_links.get(position).assessment_test_link);
+                    startActivity(intent);
             }catch (Exception e){
                 try {
                     Intent intent=new Intent(Intent.ACTION_VIEW);

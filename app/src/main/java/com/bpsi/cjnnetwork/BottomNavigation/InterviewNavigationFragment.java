@@ -110,19 +110,20 @@ public class InterviewNavigationFragment extends Fragment {
             }
         };
         requestQueue.add(stringRequest);
-        try{
-            binding.interview.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(), WebsiteOpeningActivity.class);
-                    intent.putExtra("url","https://www.google.com");
-                    startActivity(intent);
-                }
-            });
-        }
-        catch (Exception e){
-            Log.e("webView", e.getMessage() );
-        }
+        //---just for testing, It is of no use
+//        try{
+//            binding.interview.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Intent intent = new Intent(getContext(), WebsiteOpeningActivity.class);
+//                    intent.putExtra("UrlLink","https://www.google.com");
+//                    startActivity(intent);
+//                }
+//            });
+//        }
+//        catch (Exception e){
+//            Log.e("webView", e.getMessage() );
+//        }
 
 
         return binding.getRoot();
@@ -137,13 +138,18 @@ public class InterviewNavigationFragment extends Fragment {
     public void onClick_dashboard_tapped(int position, int tapped_on) {
         if (tapped_on==1){
             try {
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(qr_codes_links.get(position).assessment_test_link));
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(qr_codes_links.get(position).assessment_test_link));
+//                startActivity(intent);
+                Intent intent = new Intent(getContext(), WebsiteOpeningActivity.class);
+                intent.putExtra("UrlLink",qr_codes_links.get(position).assessment_test_link);
+                Log.d( "webCheck11111",qr_codes_links.get(position).assessment_test_link);
                 startActivity(intent);
             }catch (Exception e){
                 try {
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse("http://"+qr_codes_links.get(position).assessment_test_link));
+
                     startActivity(intent);
                 }catch (Exception e1){
 //                    Toast.makeText(getContext(), e1.getMessage(), Toast.LENGTH_SHORT).show();
